@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine Day!</title>
+    <style>
+        body {
+            background: #000 url(img/back2.jpg);
+            background-size: 100%;
+        }
+        .img_container {
+            display: flex;
+            margin: 120px 0px 0px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        .question {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 18pt;
+            color: red;
+        }
+        .btn:hover {
+            background-color: rgb(255, 209, 209);
+        }
+        .btn:active {
+            background-color: rgb(246, 80, 80);
+            color: white;
+        }
+        #img1 {
+            display: block;
+            width: 300px;
+            height: 300px;
+            border: 5px solid white;
+            border-radius: 50px;
+            pointer-events: none;
+        }
+        #heart {
+            display: none;
+            position: absolute;
+            left: 1100px;
+            top: 120px;
+            width: 300px;
+            height: 300px;
+            pointer-events: none;
+        }
+        #quest {
+            color: white;
+            font-size: 37pt;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <img id="heart" src="img/heart2.png">
+    <div class="img_container">
+        <img id="img1" src="img/img1.jpg">
+    </div>
+    <div class="question">
+        <p id="quest">Ты будешь моей возлюбленной?</p>
+        <button class="btn" id="yes">Да</button>
+        <button class="btn" id="no">Нет</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
